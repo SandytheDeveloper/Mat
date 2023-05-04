@@ -6,4 +6,11 @@
     android:layout_height="match_parent"
     tools:context=".LoginActivity">
 
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgDasji"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_dasji"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
