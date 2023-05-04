@@ -6,11 +6,100 @@
     android:layout_height="match_parent"
     tools:context=".LoginActivity">
 
+    <View
+        android:id="@+id/view_rectangle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_220sdp"
+        android:background="@drawable/ic_ractangle_shape"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/imgDasji"
-        android:layout_width="@dimen/_60sdp"
-        android:layout_height="@dimen/_60sdp"
-        android:scaleType="centerInside"
-        android:src="@drawable/ic_dasji"/>
+        android:layout_width="@dimen/_94sdp"
+        android:layout_height="@dimen/_96sdp"
+        android:layout_marginBottom="@dimen/_58sdp"
+        android:src="@drawable/ic_dasji"
+        app:layout_constraintBottom_toBottomOf="@id/view_rectangle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/lblLaxmiDasji"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_7sdp"
+        android:text="@string/jai_likhmidasji_ri"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_18sdp"
+        app:layout_constraintEnd_toEndOf="@id/imgDasji"
+        app:layout_constraintStart_toStartOf="@id/imgDasji"
+        app:layout_constraintTop_toBottomOf="@id/imgDasji" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/lblOtp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_36sdp"
+        android:text="@string/otp_verification"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_20sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view_rectangle" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/lblOtpDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:gravity="center"
+        android:text="@string/description_otp"
+        android:textSize="@dimen/_16sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lblOtp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/lblEnterNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_35sdp"
+        android:text="@string/enter_mobile_number"
+        android:textSize="@dimen/_16sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lblOtpDesc" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edtEnterMobileNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_15sdp"
+        android:text="@string/_91"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_16sdp"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lblEnterNumber" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_25sdp"
+        android:layout_marginTop="@dimen/_32sdp"
+        android:layout_marginEnd="@dimen/_25sdp"
+        android:background="@drawable/btn_bg"
+        android:backgroundTint="@color/light_red"
+        android:padding="@dimen/_11sdp"
+        android:text="@string/get_otp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_16sdp"
+        app:layout_constraintEnd_toEndOf="@id/edtEnterMobileNumber"
+        app:layout_constraintStart_toStartOf="@id/edtEnterMobileNumber"
+        app:layout_constraintTop_toBottomOf="@id/edtEnterMobileNumber" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
