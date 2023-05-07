@@ -4,6 +4,6 @@
     <string name="otp_verification">OTP Verification</string>
     <string name="description_otp">We will send you one time password \n on this mobile number.</string>
     <string name="enter_mobile_number">Enter mobile number</string>
-    <string name="_91">+91 —</string>
+    <string name="_91">+91 -</string>
     <string name="get_otp">GET OTP</string>
 </resources>

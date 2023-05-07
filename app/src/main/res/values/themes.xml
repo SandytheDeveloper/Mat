@@ -3,7 +3,7 @@
     <style name="Theme.Mat" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/purple_500</item>
-        <item name="colorPrimaryVariant">@color/light_red</item>
+        <item name="colorPrimaryVariant">@color/color_light_red</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/teal_200</item>
@@ -13,4 +13,122 @@
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+
+    <!-- Button Style-->
+    <style name="ButtonParentStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/_40sdp</item>
+        <item name="android:background">@drawable/btn_bg</item>
+        <item name="android:textSize">@dimen/_14sdp</item>
+        <item name="android:layout_marginBottom">@dimen/_20sdp</item>
+        <item name="android:layout_marginHorizontal">@dimen/_16sdp</item>
+        <item name="android:fontFamily">@font/nunito_medium</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <!-- Edit Text Parent Style-->
+    <style name="EditTextParentStyle">
+        <item name="android:textSize">@dimen/_12sdp</item>
+        <item name="android:paddingTop">@dimen/_5sdp</item>
+        <item name="android:paddingBottom">@dimen/_5sdp</item>
+        <item name="android:paddingStart">@dimen/_10sdp</item>
+        <item name="android:paddingEnd">@dimen/_10sdp</item>
+        <item name="android:fontFamily">@font/nunito_bold</item>
+        <item name="android:textColor">@color/color_grey</item>
+    </style>
+
+    <!-- Text Parent Style-->
+    <style name="TextParentStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">false</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/_12sdp</item>
+        <item name="android:gravity">start|center_vertical</item>
+        <item name="android:lineSpacingExtra">@dimen/_1sdp</item>
+    </style>
+
+    <!-- Text Light Style-->
+    <style name="Text18LightWhiteStyle" parent="TextParentStyle">
+        <item name="android:textSize">@dimen/_18sdp</item>
+        <item name="android:fontFamily">@font/nunito_light</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Text16LightWhiteStyle" parent="TextParentStyle">
+        <item name="android:textSize">@dimen/_16sdp</item>
+        <item name="android:fontFamily">@font/nunito_light</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Text14LightWhiteStyle" parent="TextParentStyle">
+        <item name="android:textSize">@dimen/_14sdp</item>
+        <item name="android:fontFamily">@font/nunito_light</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Text12LightWhiteStyle" parent="TextParentStyle">
+        <item name="android:textSize">@dimen/_12sdp</item>
+        <item name="android:fontFamily">@font/nunito_light</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+
+    <!-- Text Medium Style-->
+    <style name="Text18MediumWhiteStyle" parent="TextParentStyle">
+        <item name="android:textSize">@dimen/_18sdp</item>
+        <item name="android:fontFamily">@font/nunito_medium</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Text16MediumWhiteStyle" parent="TextParentStyle">
+        <item name="android:textSize">@dimen/_16sdp</item>
+        <item name="android:fontFamily">@font/nunito_medium</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Text14MediumWhiteStyle" parent="TextParentStyle">
+        <item name="android:textSize">@dimen/_14sdp</item>
+        <item name="android:fontFamily">@font/nunito_medium</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Text12MediumWhiteStyle" parent="TextParentStyle">
+        <item name="android:textSize">@dimen/_12sdp</item>
+        <item name="android:fontFamily">@font/nunito_medium</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+
+    <!-- Text Bold Style-->
+    <style name="Text20BoldWhiteStyle" parent="TextParentStyle">
+        <item name="android:textSize">@dimen/_20sdp</item>
+        <item name="android:fontFamily">@font/nunito_bold</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Text18BoldWhiteStyle" parent="TextParentStyle">
+        <item name="android:textSize">@dimen/_18sdp</item>
+        <item name="android:fontFamily">@font/nunito_bold</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Text16BoldWhiteStyle" parent="TextParentStyle">
+        <item name="android:textSize">@dimen/_16sdp</item>
+        <item name="android:fontFamily">@font/nunito_bold</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Text14BoldWhiteStyle" parent="TextParentStyle">
+        <item name="android:textSize">@dimen/_14sdp</item>
+        <item name="android:fontFamily">@font/nunito_bold</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Text12BoldWhiteStyle" parent="TextParentStyle">
+        <item name="android:textSize">@dimen/_12sdp</item>
+        <item name="android:fontFamily">@font/nunito_bold</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
 </resources>
