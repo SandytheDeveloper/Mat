@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WelcomeActivity">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/img1"
+        android:layout_width="@dimen/_35sdp"
+        android:layout_height="@dimen/_300sdp"
+        android:layout_marginTop="@dimen/_72sdp"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_girl_1" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/img2"
+        android:layout_width="@dimen/_205sdp"
+        android:layout_height="@dimen/_340sdp"
+        android:layout_marginStart="@dimen/_24sdp"
+        android:layout_marginTop="@dimen/_49sdp"
+        android:layout_marginEnd="36dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toStartOf="@+id/img3"
+        app:layout_constraintStart_toEndOf="@id/img1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_girl_2" />
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/img3"
+        android:layout_width="@dimen/_35sdp"
+        android:layout_height="@dimen/_300sdp"
+        android:layout_marginTop="@dimen/_72sdp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_girl_3" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/lblTagLine"
+        style="@style/Text18BoldWhiteStyle"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="@dimen/_23sdp"
+        android:gravity="center"
+        android:text="@string/tag_line_one"
+        android:textColor="@color/color_light_red"
+        android:textSize="@dimen/_22sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img2" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/lblTagLineDsc"
+        style="@style/Text14LightWhiteStyle"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:gravity="center"
+        android:text="@string/tag_dsc"
+        android:textColor="@color/color_grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lblTagLine" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lblTagLineDsc"
+        app:tabBackground="@drawable/tb_bg"
+        app:tabMode="fixed" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnCreateAccount"
+        style="@style/ButtonParentStyle"
+        android:layout_marginTop="@dimen/_32sdp"
+        android:text="@string/create_an_account"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lblTagLineDsc" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtAlreadyHaveAnAccount"
+        style="@style/Text14LightWhiteStyle"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:gravity="center"
+        android:text="@string/_sign_in"
+        android:textColor="@color/color_grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnCreateAccount" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgRing"
+        android:layout_width="@dimen/_196sdp"
+        android:layout_height="@dimen/_80sdp"
+        android:scaleType="fitEnd"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_ring" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

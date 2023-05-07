@@ -6,4 +6,10 @@
     <string name="enter_mobile_number">Enter mobile number</string>
     <string name="_91">+91 - </string>
     <string name="get_otp">GET OTP</string>
+    <string name="_spl_tx">आवो कालजे री कोर,\nबांधो रिस्तो री डोर,</string>
+    <string name="_spl_tx_dsc">मारवाड़ी समाज\nMarwaDi community</string>
+    <string name="tag_line_one">Tag Line One</string>
+    <string name="tag_dsc">Users going through a vetting process to\nensure you never match with bots.</string>
+    <string name="create_an_account">Create an account</string>
+    <string name="_sign_in">Already have an account?<b><font color="#F9464A">Sign In</font></b></string>
 </resources>
