@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OtpVerificationActivity">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgOtp"
+        android:layout_width="@dimen/_106sdp"
+        android:layout_height="@dimen/_106sdp"
+        android:layout_marginTop="@dimen/_35sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_otp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/lblOtp"
+        style="@style/Text18BoldWhiteStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_23sdp"
+        android:text="@string/otp_verification"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imgOtp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/lblOtpDsc"
+        style="@style/Text14MediumWhiteStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:text="@string/enter_otp_sent_to_91_88238_18283"
+        android:textColor="@color/color_grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lblOtp" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/linearLayoutOtp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_31sdp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lblOtpDsc">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edtOtpNum1"
+            style="@style/Text16BoldWhiteStyle"
+            android:layout_width="@dimen/_43sdp"
+            android:layout_height="@dimen/_47sdp"
+            android:layout_marginEnd="@dimen/_11sdp"
+            android:background="@drawable/edit_tx_bg"
+            android:backgroundTint="@color/color_light_red"
+            android:gravity="center"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:text="@string/_1" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edtOtpNum2"
+            style="@style/Text16BoldWhiteStyle"
+            android:layout_width="@dimen/_43sdp"
+            android:layout_height="@dimen/_47sdp"
+            android:layout_marginEnd="@dimen/_11sdp"
+            android:background="@drawable/edit_tx_bg"
+            android:backgroundTint="@color/color_light_red"
+            android:gravity="center"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:text="@string/_4" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edtOtpNum3"
+            style="@style/Text16BoldWhiteStyle"
+            android:layout_width="@dimen/_43sdp"
+            android:layout_height="@dimen/_47sdp"
+            android:layout_marginEnd="@dimen/_11sdp"
+            android:background="@drawable/edit_tx_bg"
+            android:gravity="center"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:text="@string/_1" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edtOtpNum4"
+            style="@style/Text16BoldWhiteStyle"
+            android:layout_width="@dimen/_43sdp"
+            android:layout_height="@dimen/_47sdp"
+            android:background="@drawable/edit_tx_bg"
+            android:gravity="center"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:text="@string/_1" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtViewReSendOtp"
+        style="@style/Text14MediumWhiteStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_18sdp"
+        android:text="@string/didn_t_receive_otp_resend_otp"
+        android:textColor="@color/color_grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearLayoutOtp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/lblVerifyOtp"
+        style="@style/Text12MediumWhiteStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:gravity="center"
+        android:text="@string/otp_verify_dsc"
+        android:textColor="@color/color_grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtViewReSendOtp" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnVerify"
+        style="@style/ButtonParentStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:inputType="number"
+        android:text="@string/verify_process"
+        app:layout_constraintEnd_toEndOf="@id/lblVerifyOtp"
+        app:layout_constraintStart_toStartOf="@id/lblVerifyOtp"
+        app:layout_constraintTop_toBottomOf="@id/lblVerifyOtp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
