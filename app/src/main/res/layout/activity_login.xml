@@ -27,8 +27,8 @@
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/lblLaxmiDasji"
-        android:layout_width="wrap_content"
         style="@style/Text16BoldWhiteStyle"
+        android:layout_width="wrap_content"
         android:layout_marginTop="@dimen/_7sdp"
         android:text="@string/jai_likhmidasji_ri"
         app:layout_constraintEnd_toEndOf="@id/imgDasji"
@@ -45,27 +45,27 @@
 
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/lblOtp"
-            android:layout_width="wrap_content"
             style="@style/Text18BoldWhiteStyle"
+            android:layout_width="wrap_content"
             android:text="@string/otp_verification"
-            android:textColor="@color/black"/>
+            android:textColor="@color/black" />
 
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/lblOtpDesc"
-            android:layout_width="wrap_content"
             style="@style/Text14LightWhiteStyle"
-            android:textColor="@color/color_grey"
+            android:layout_width="wrap_content"
             android:layout_marginTop="@dimen/_5sdp"
             android:gravity="center"
-            android:text="@string/description_otp"/>
+            android:text="@string/description_otp"
+            android:textColor="@color/color_grey" />
 
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/lblEnterNumber"
-            android:layout_width="wrap_content"
             style="@style/Text14LightWhiteStyle"
-            android:textColor="@color/color_grey"
+            android:layout_width="wrap_content"
             android:layout_marginTop="@dimen/_30sdp"
-            android:text="@string/enter_mobile_number"/>
+            android:text="@string/enter_mobile_number"
+            android:textColor="@color/color_grey" />
 
         <androidx.appcompat.widget.AppCompatEditText
             android:id="@+id/edtEnterMobileNumber"
@@ -80,7 +80,7 @@
         <androidx.appcompat.widget.AppCompatButton
             style="@style/ButtonParentStyle"
             android:layout_marginTop="@dimen/_32sdp"
-            android:text="@string/get_otp"/>
+            android:text="@string/get_otp" />
 
     </LinearLayout>
 

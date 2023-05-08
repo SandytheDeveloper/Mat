@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".WelcomeActivity">
+    tools:context=".LangauageActivity">
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/img1"
@@ -45,77 +45,41 @@
         android:layout_width="wrap_content"
         android:layout_marginTop="@dimen/_23sdp"
         android:gravity="center"
-        android:text="@string/tag_line_one"
+        android:text="@string/select_language"
         android:textColor="@color/color_light_red"
         android:textSize="@dimen/_22sdp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/img2" />
 
-    <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/lblTagLineDsc"
-        style="@style/Text14LightWhiteStyle"
-        android:layout_width="wrap_content"
-        android:layout_marginTop="@dimen/_5sdp"
-        android:gravity="center"
-        android:text="@string/tag_dsc"
-        android:textColor="@color/color_grey"
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edtLanguage"
+        style="@style/Text12LightWhiteStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_26sdp"
+        android:layout_marginEnd="@dimen/_40sdp"
+        android:background="@drawable/edit_tx_bg"
+        android:drawableEnd="@drawable/ic_icon"
+        android:hint="@string/app_language"
+        android:padding="@dimen/_5sdp"
+        android:textColorHint="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/lblTagLine" />
 
-    <androidx.appcompat.widget.LinearLayoutCompat
-        android:id="@+id/linearLayout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_12sdp"
-        android:gravity="center"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/lblTagLineDsc">
-
-        <androidx.appcompat.widget.AppCompatImageView
-            android:id="@+id/imgDot1"
-            android:layout_width="@dimen/_10sdp"
-            android:layout_height="@dimen/_10sdp"
-            android:layout_marginEnd="@dimen/_5sdp"
-            app:srcCompat="@drawable/ic_dot2" />
-
-        <androidx.appcompat.widget.AppCompatImageView
-            android:id="@+id/imgDot2"
-            android:layout_width="@dimen/_10sdp"
-            android:layout_height="@dimen/_10sdp"
-            android:layout_marginEnd="@dimen/_5sdp"
-            android:src="@drawable/ic_dot2" />
-
-        <androidx.appcompat.widget.AppCompatImageView
-            android:id="@+id/imgDot3"
-            android:layout_width="@dimen/_10sdp"
-            android:layout_height="@dimen/_10sdp"
-            android:src="@drawable/ic_dot2" />
-
-    </androidx.appcompat.widget.LinearLayoutCompat>
-
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btnCreateAccount"
+        android:id="@+id/btnNext"
         style="@style/ButtonParentStyle"
-        android:layout_marginTop="@dimen/_17sdp"
-        android:text="@string/create_an_account"
+        android:layout_width="@dimen/_90sdp"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_marginTop="@dimen/_100sdp"
+        android:layout_marginEnd="@dimen/_19sdp"
+        android:text="@string/next"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/linearLayout" />
-
-    <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/txtAlreadyHaveAnAccount"
-        style="@style/Text14LightWhiteStyle"
-        android:layout_width="wrap_content"
-        android:layout_marginTop="@dimen/_5sdp"
-        android:gravity="center"
-        android:text="@string/_sign_in"
-        android:textColor="@color/color_grey"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btnCreateAccount" />
+        app:layout_constraintTop_toBottomOf="@id/edtLanguage" />
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/imgRing"
