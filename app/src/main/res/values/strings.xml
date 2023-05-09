@@ -18,7 +18,14 @@
     <string name="enter_otp_sent_to_91_88238_18283">Enter OTP Sent to <b><font color="#FF000000">+91 - 88238 18283</font></b></string>
     <string name="_1">1</string>
     <string name="_4">4</string>
-    <string name="didn_t_receive_otp_resend_otp">Didn’t Receive OTP <b><font color ="#F9464A">RESEND OTP</font></b></string>
+    <string name="didn_t_receive_otp_resend_otp">Didn’t Receive OTP <b><font color="#F9464A">RESEND OTP</font></b></string>
     <string name="otp_verify_dsc">By signing up you agree to our Term of\nuse and privacy policy</string>
     <string name="verify_process"><![CDATA[VERIFY & PROCESS]]></string>
+    <string name="manage_subscription">Manage Subscription</string>
+    <string name="get_access_to_all_features">Get access to all features</string>
+    <string name="ch_bx_1_dsc">Lorem ipsum dolor sit is simple and most used</string>
+    <string name="chec_txt_2">Lorem ipsum dolor sit is simple</string>
+    <string name="chec_txt_3">Lorem ipsum dolor sit is simple and most used</string>
+    <string name="lorem_ipsum_dolor_sit_is_simple_and_most">Lorem ipsum dolor sit is simple and most</string>
+    <string name="best_value">Best Value</string>
 </resources>
